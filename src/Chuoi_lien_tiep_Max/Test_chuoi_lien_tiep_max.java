@@ -13,10 +13,10 @@ public class Test_chuoi_lien_tiep_max {
 
         for (int i = 0; i < string.length(); i++) {
             LinkedList<Character> list = new LinkedList<>();
-            list.add(string.charAt(i));
-            if (string.charAt(i) != ' ') {
+            if (string.charAt(i) != ' ' ) {
+                list.add(string.charAt(i));
                 for (int j = i + 1; j < string.length(); j++) {
-                    if (string.charAt(j) != ' ') {
+                    if (string.charAt(j) != ' '&& string.charAt(j)>list.getLast()) {
                         list.add(string.charAt(j));
                     } else {
                         break;
